@@ -16,7 +16,12 @@ $(document).ready(function(){
     var result = leapYear(year)
     console.log(result);
 
+    $("#outPutYear").text(year);
+    if (result === true) {
+      $("#not").hide();
+    }
 
+  $("#result").show();
 
 
   });
